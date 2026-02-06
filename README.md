@@ -9,6 +9,14 @@
 
 ---
 
+## 🖼️ Visual Preview
+
+![Preview](assets/screenshots/preview.svg)
+
+> Replace this placeholder by adding real screenshots to `assets/screenshots/` (see `samples/capture-screenshots.md`).
+
+---
+
 ## 🌟 Impact Statement
 
 This project stems from **13+ years of community leadership with Girls Who Code** and a deep commitment to making technology accessible to everyone. By providing production-ready accessible components, we're removing barriers for developers to create inclusive web applications while ensuring people with disabilities can fully participate in the digital world.
@@ -19,9 +27,23 @@ This project stems from **13+ years of community leadership with Girls Who Code*
 
 ## 🚀 Live Demo
 
-**[View Live Demo](https://accessibility-rails-components.terminaldrift.digital)** *(Coming Soon)*
+- **Try it in GitHub Codespaces (recommended):** https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1070341212
+- **Component previews:** `/rails/view_components` (once the server is running)
 
-See all components in action with full accessibility testing and keyboard navigation demonstrations.
+See `samples/` for a short walkthrough script and demo request URLs.
+
+### 💡 At a glance
+- **Run time:** ~2 minutes for Codespace setup
+- **Tech stack:** Rails 7 + ViewComponent + TailwindCSS + Stimulus
+- **What you'll see:** 15+ accessible components with keyboard navigation + screen reader support
+
+---
+
+## 🧪 Demo Samples
+
+- `samples/demo-checklist.md` – quick walkthrough script (keyboard + screen reader)
+- `samples/requests.http` – URLs to hit during a demo (VS Code REST Client friendly)
+- `samples/copilot-prompts.md` – Copilot prompt ideas to extend the library
 
 ---
 
@@ -116,7 +138,7 @@ See all components in action with full accessibility testing and keyboard naviga
 #### **Option 1: Add to Existing Rails App**
 ```bash
 # Add to your Gemfile
-gem 'accessibility_rails_components', git: 'https://github.com/forestbloomglitch/accessibility-rails-components.git'
+gem 'accessibility_rails_components', git: 'https://github.com/arcaneglam/accessibility-rails-components.git'
 
 # Install the gem
 bundle install
@@ -127,7 +149,7 @@ rails generate accessibility_rails_components:install
 
 #### **Option 2: Clone and Explore**
 ```bash
-git clone https://github.com/forestbloomglitch/accessibility-rails-components.git
+git clone https://github.com/arcaneglam/accessibility-rails-components.git
 cd accessibility-rails-components
 bundle install
 yarn install
@@ -203,29 +225,6 @@ rails accessibility:audit
 
 ---
 
-## 🤝 Contributing
-
-This project welcomes contributors from all backgrounds! Whether you're a developer, designer, accessibility expert, or someone with lived experience using assistive technologies, your contributions are valuable.
-
-### **Ways to Contribute**
-- **Code Contributions** - New components, bug fixes, improvements
-- **Accessibility Testing** - Manual testing with assistive technologies
-- **Documentation** - Improving guides and examples
-- **Internationalization** - Adding language support
-- **Community** - Helping others in discussions and issues
-
-### **Getting Started**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-component`)
-3. Run the test suite (`rails test`)
-4. Commit your changes (`git commit -am 'Add amazing accessible component'`)
-5. Push to the branch (`git push origin feature/amazing-component`)
-6. Open a Pull Request
-
-See our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) for detailed information.
-
----
-
 ## 📖 Documentation
 
 - **[Component Documentation](docs/components.md)** - Detailed API and usage examples
@@ -236,68 +235,9 @@ See our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_COND
 
 ---
 
-## 🎯 Roadmap
-
-### **Phase 1: Core Components** ✅
-- Essential form and navigation components
-- Basic accessibility testing framework
-- Documentation and examples
-
-### **Phase 2: Advanced Components** 🔄
-- Data visualization components
-- Complex interaction patterns
-- Enhanced mobile support
-
-### **Phase 3: Internationalization** 📅
-- Te Reo Māori language pack
-- Pacific Islander language support
-- Right-to-left language support
-
-### **Phase 4: Community Features** 📅
-- Component generator CLI
-- Accessibility linting tools
-- Community component library
-
----
-
-## 📊 Impact Metrics
-
-- **🎯 WCAG Compliance**: 100% AA standard compliance across all components
-- **⚡ Performance**: <50ms render time for all components
-- **🔧 Developer Experience**: <5 minutes from installation to first component
-- **♿ User Impact**: Enabling accessible web experiences for 1+ billion people with disabilities globally
-
----
-
-## 🏅 Recognition & Community
-
-- **Rails Community**: Featured in Ruby Weekly and Rails Newsletter
-- **Accessibility Community**: Endorsed by WebAIM and A11Y Project
-- **Open Source**: 500+ stars, 50+ contributors, 10+ companies using in production
-
----
-
-## 📞 Support & Contact
-
-- **Issues & Bugs**: [GitHub Issues](https://github.com/forestbloomglitch/accessibility-rails-components/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/forestbloomglitch/accessibility-rails-components/discussions)
-- **Email**: support@terminaldrift.digital
-- **Professional Contact**: [Jennifer Picado on LinkedIn](https://linkedin.com/in/jennifer-picado)
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌟 Acknowledgments
-
-- **Girls Who Code Community** - 13+ years of inspiration and diverse perspectives
-- **Accessibility Community** - WebAIM, A11Y Project, and countless advocates
-- **Rails Community** - ViewComponent team and Rails accessibility contributors
-- **New Zealand Tech Community** - Embracing inclusive development practices
 
 ---
 
