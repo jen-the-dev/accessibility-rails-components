@@ -4,7 +4,7 @@ WCAG 2.1 AA ViewComponent library and live showcase for Auckland/NZ developer ro
 
 [![CI](https://github.com/jen-the-dev/accessibility-rails-components/actions/workflows/ci.yml/badge.svg)](https://github.com/jen-the-dev/accessibility-rails-components/actions/workflows/ci.yml)
 
-**Live demo:** [Deploy via Render](#deploy) — link added after first deploy
+**Live demo:** [https://accessibility-rails-components.onrender.com](https://accessibility-rails-components.onrender.com) · [Health check](https://accessibility-rails-components.onrender.com/health)
 
 ## Problem
 
@@ -20,7 +20,7 @@ Rails 7 app demonstrating three accessible ViewComponents with a recruiter-frien
 
 ## Tech stack
 
-- Ruby 3.3 · Rails 7.1 · ViewComponent · Stimulus · SQLite
+- Ruby 3.3 · Rails 7.1 · ViewComponent · SQLite · Render
 
 ## Quick start
 
