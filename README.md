@@ -1,50 +1,61 @@
 # Accessibility Rails Components
-Portfolio repository aligned to ANZSCO 261312 (Developer Programmer), focused on reusable Rails UI components with accessibility-first implementation standards.
+
+WCAG 2.1 AA ViewComponent library and live showcase for Auckland/NZ developer roles (ANZSCO 261312).
+
+[![CI](https://github.com/jen-the-dev/accessibility-rails-components/actions/workflows/ci.yml/badge.svg)](https://github.com/jen-the-dev/accessibility-rails-components/actions/workflows/ci.yml)
+
+**Live demo:** [Deploy via Render](#deploy) — link added after first deploy
 
 ## Problem
-Teams frequently need reusable UI building blocks that remain accessible, testable, and maintainable across product releases.
+
+Teams need reusable UI building blocks that stay accessible, testable, and maintainable across releases.
 
 ## Solution
-This repository demonstrates a Rails component library approach where accessibility requirements are treated as a core engineering constraint rather than a post-release fix.
 
-## Architecture
-- `app/components/` for reusable UI component definitions.
-- `app/` and `config/` for Rails application integration and configuration.
-- `docs/` for usage and implementation guidance.
-- `Gemfile` and project scripts for dependency and runtime management.
+Rails 7 app demonstrating three accessible ViewComponents with a recruiter-friendly live showcase:
 
-## Tech Stack
-- Ruby on Rails
-- ViewComponent-style component architecture
-- Stimulus/Tailwind-oriented frontend patterns
-- Ruby test tooling and accessibility-oriented validation
+- `AccessibleButtonComponent` — labelled buttons, variants, disabled state
+- `AccessibleFormComponent` — associated labels, hints, required semantics
+- `AccessibleModalComponent` — dialog role, keyboard close, backdrop handling
 
-## Quick Start
+## Tech stack
+
+- Ruby 3.3 · Rails 7.1 · ViewComponent · Stimulus · SQLite
+
+## Quick start
+
 ```bash
 bundle install
-rails db:setup
-rails server
+bin/setup
+bin/rails server
 ```
 
+Open `http://localhost:3000` · Health check: `/health`
+
 ## Testing
-- `rails test`
-- Run accessibility checks documented in `docs/`.
 
-## ANZSCO 261312 Competency Evidence
-- **Software design and development**: modular component architecture for scalable UI systems.
-- **Implementation quality**: accessibility-aware engineering embedded in component development.
-- **Maintenance readiness**: clear documentation and repeatable setup/testing workflow.
+```bash
+bundle exec rspec
+```
 
-## Commit Convention
-Use Conventional Commits for presentation clarity:
-- `feat(scope): add new user-facing capability`
-- `fix(scope): resolve functional defect`
-- `test(scope): add or improve automated tests`
-- `docs(readme): improve project documentation`
+## Deploy
 
-## Evidence Map
-- `app/components/`
-- `app/`
-- `config/`
-- `docs/`
-- `Gemfile`
+### Render (recommended)
+
+1. Fork or use this repo: `jen-the-dev/accessibility-rails-components`
+2. In [Render Dashboard](https://dashboard.render.com), **New → Blueprint** and select `render.yaml`
+3. After deploy, set the live URL in this README and on [projects-workspaces](https://github.com/jen-the-dev/projects-workspaces)
+
+Or deploy manually as a **Docker Web Service** using the included `Dockerfile`.
+
+## Evidence map
+
+- Components: `app/components/`
+- Showcase: `app/views/home/index.html.erb`
+- Tests: `spec/`
+- CI: `.github/workflows/ci.yml`
+
+## Related
+
+- Portfolio hub: [projects-workspaces](https://github.com/jen-the-dev/projects-workspaces)
+- Live portfolio: [jenthedev.it.com](https://jenthedev.it.com)
