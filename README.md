@@ -1,6 +1,6 @@
 # Accessibility Rails Components
 
-WCAG 2.1 AA ViewComponent library and live showcase for Auckland/NZ developer roles (ANZSCO 261312).
+Drop-in WCAG 2.1 AA ViewComponent library with a live product showcase for teams shipping inclusive UI.
 
 [![CI](https://github.com/jen-the-dev/accessibility-rails-components/actions/workflows/ci.yml/badge.svg)](https://github.com/jen-the-dev/accessibility-rails-components/actions/workflows/ci.yml)
 
@@ -12,7 +12,7 @@ Teams need reusable UI building blocks that stay accessible, testable, and maint
 
 ## Solution
 
-Rails 7 app demonstrating three accessible ViewComponents with a recruiter-friendly live showcase:
+Rails 7 app shipping three accessible ViewComponents with a live demo site:
 
 - `AccessibleButtonComponent` — labelled buttons, variants, disabled state
 - `AccessibleFormComponent` — associated labels, hints, required semantics
